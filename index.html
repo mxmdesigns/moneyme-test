@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MoneyMe Challenge</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo"></div>
+      <div class="header__menu">
+        <button class="button button-login">Login</button>
+        <button class="burger">
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="section section-blue">
+        <div class="section__wrapper">
+          <h1 class="section__title section__title-big">
+            Low rate. Fast approvals.
+          </h1>
+          <div class="calculator">
+            <div class="calculator__sliders">
+              <custom-slider
+                type="currency"
+                min="2100"
+                max="50000"
+                label="How much do you need?"
+                minlabel="$2,100"
+                maxlabel="$50,000"
+              ></custom-slider>
+              <custom-slider
+                type="unit"
+                unit="month"
+                min="12"
+                max="36"
+                label="For how long?"
+                minlabel="1 year"
+                maxlabel="3 years"
+              ></custom-slider>
+              <custom-slider
+                type="percentage"
+                min="1"
+                max="4"
+                label="Interest rate"
+                minlabel="Not bad"
+                maxlabel="Great"
+              ></custom-slider>
+            </div>
+            <div class="calculator__results">
+              <h2>Monthly repayments:</h2>
+              <p id="monthly-repay">$0.00</p>
+              <h2>Total repayments:</h2>
+              <p id="total-repay">$0.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="cta">
+          <img class="cta__bg" src="assets/texture.svg" />
+          <div class="cta__content">
+            <button class="button button-cta">Apply now</button>
+            <div id="product-review" class="cta__review">
+              <div class="cta__score">4.7/5</div>
+              <div class="cta__stars">
+                <div class="cta__star"></div>
+                <div class="cta__star"></div>
+                <div class="cta__star"></div>
+                <div class="cta__star"></div>
+                <div class="cta__star"></div>
+              </div>
+              <div class="cta__logo"></div>
+            </div>
+            <div id="google" class="cta__review">
+              <div class="cta__score">4.8/5</div>
+              <div class="cta__stars">
+                <div class="cta__star"></div>
+                <div class="cta__star"></div>
+                <div class="cta__star"></div>
+                <div class="cta__star"></div>
+                <div class="cta__star"></div>
+              </div>
+              <div class="cta__logo"></div>
+            </div>
+            <img class="cta__model" src="assets/model.svg" />
+          </div>
+        </div>
+      </section>
+      <section id="steps" class="section">
+        <div class="section__wrapper">
+          <h1 class="section__title-hidden">Apply, Shop, Redeem</h1>
+          <div id="apply" class="step">
+            <div class="step__image"></div>
+            <h2 class="step__title">Apply</h2>
+            <p class="step__text">
+              It only takes a couple of minutes via your mobile.
+            </p>
+          </div>
+          <div id="shop" class="step">
+            <div class="step__image"></div>
+            <h2 class="step__title">Shop</h2>
+            <p class="step__text">
+              Tap n Pay with Freestyle at any store within our centre
+            </p>
+          </div>
+          <div id="redeem" class="step">
+            <div class="step__image"></div>
+            <h2 class="step__title">Redeem</h2>
+            <p class="step__text">
+              We'll apply the value of any purchases back to your Freestyle
+              account - up to $250!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="freestyle" class="section section-blue">
+        <div class="section__wrapper">
+          <h1 class="section__title section__title-center">
+            What is a Freestyle virtual Mastercard<span class="copyright"
+              >®</span
+            >?
+          </h1>
+          <h2 class="section__subtitle">
+            It’s the virtual credit card you can access straight from your phone
+          </h2>
+          <ul class="list">
+            <li id="card" class="list__item">
+              <div class="list__image"></div>
+              <div class="list__text">
+                Use your card from your phone instantly once approved
+              </div>
+            </li>
+            <li id="interest" class="list__item">
+              <div class="list__image"></div>
+              <div class="list__text">
+                Pay later with up to 55-days interest-free!
+              </div>
+            </li>
+            <li id="transfer" class="list__item">
+              <div class="list__image"></div>
+              <div class="list__text">Transfer money to any bank account</div>
+            </li>
+            <li id="perks" class="list__item">
+              <div class="list__image"></div>
+              <div class="list__text">
+                Get cashback oﬀers in 2 days with MoneyMe Perks, powered by
+                Cashrewards™
+              </div>
+            </li>
+            <li id="annual" class="list__item">
+              <div class="list__image"></div>
+              <div class="list__text">
+                No annual fees for limits under $3,000
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="section__underlay"></div>
+      </section>
+      <section id="pricing" class="section">
+        <div class="section__wrapper">
+          <h1 class="section__title-hidden">Eligibility & Pricing</h1>
+          <div class="infoblock" id="eligibility">
+            <h2 class="infoblock__title">Eligibility</h2>
+            <ul class="infoblock__list">
+              <li>18+ years</li>
+              <li>Employed</li>
+              <li>Earns more than $24,000 per year</li>
+              <li>Australian resident or citizen</li>
+              <li>No major defaults or bankruptcy</li>
+            </ul>
+          </div>
+          <div class="infoblock" id="eligibility">
+            <h2 class="infoblock__title">Pricing</h2>
+            <div class="infoblock__grid">
+              <div class="infoblock__cell">Credit limit</div>
+              <div class="infoblock__cell infoblock__cell-text">
+                Apply for $1,000 up to $20,000
+              </div>
+              <div class="infoblock__cell">Interest-free period</div>
+              <div class="infoblock__cell infoblock__cell-text">
+                Up to 55 days
+              </div>
+              <div class="infoblock__cell">Interest rate</div>
+              <div class="infoblock__cell infoblock__cell-text">
+                16.99% p.a.
+                <span class="infoblock__cell-span">
+                  Fees and charges payable
+                </span>
+              </div>
+              <div class="infoblock__cell">Available with</div>
+              <div class="infoblock__cell infoblock__cell-text">
+                ApplePay<button id="apple-pay" class="button button-mini">
+                  <div class="button-mini__image"></div>
+                  Pay
+                </button>
+                & GooglePay<button id="google-pay" class="button button-mini">
+                  <div class="button-mini__image"></div>
+                  Pay
+                </button>
+              </div>
+              <div class="infoblock__cell">Annual fee</div>
+              <div
+                class="infoblock__cell infoblock__cell-text infoblock__grid-inner"
+              >
+                <div class="infoblock__cell-span">Fee</div>
+                <div class="infoblock__cell-span">Credit limit</div>
+                <div class="infoblock__cell-text infoblock__cell-highlight">
+                  $0
+                </div>
+                <div class="infoblock__cell-text infoblock__cell-highlight">
+                  Up to $3,000
+                </div>
+                <div class="infoblock__cell-text">$49</div>
+                <div class="infoblock__cell-text">$3,001 to $5,000</div>
+                <div class="infoblock__cell-text">$149</div>
+                <div class="infoblock__cell-text">$5,001 to $20,000</div>
+              </div>
+              <div class="infoblock__cell infoblock__cell-strike">
+                Physical card
+              </div>
+              <div class="infoblock__cell infoblock__cell-text">
+                <p>Not needed.</p>
+                Virtual card available <b>via app.</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="components/slider.js"></script>
+    <script src="js/calculations.js"></script>
+  </body>
+</html>

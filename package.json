@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  },
+  "scripts": {
+    "startDev": "npx nodemon -w index.html -w src/ server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sass": "^1.59.2"
+  }
+}

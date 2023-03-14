@@ -1,0 +1,54 @@
+//text-sizes
+$xsmall: 10px;
+$small: 14px;
+$button: 16px;
+$medium: 20px;
+$info: 21px;
+$info-large: 24px;
+$large: 25px;
+$title-small: 28px;
+$title: 40px;
+$title-large: 60px;
+
+//colors
+$white: #fff;
+$black: #000;
+$bg-blue: #00d1d0;
+$highlight: #04ff80;
+$highlight-footer: #02bab9;
+$text: #606060;
+$yellow: #eea202;
+$shadow: #00000015;
+$shadow2: #00000060;
+$underlay: #ffffff15;
+
+//breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$desktop-small: 900px;
+$desktop: 1024px;
+$desktop-large: 1200px;
+
+@mixin mobile-large {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media (min-width: #{$desktop-large}) {
+    @content;
+  }
+}
